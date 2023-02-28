@@ -9,8 +9,8 @@ public class AudiS8 extends Jarmu {
     }
 
     
-    public boolean gyorshajtottE(int sebesseg) {
-        return (!this.lezerblokkolo && sebesseg < this.sebesseg) ? true : false;
+    public boolean gyorshajtottE(int sebessegKorlat) {
+        return (lezerblokkolo) ? false : (this.sebesseg > sebessegKorlat);
         }
     
    public boolean isLezerblokkolo() {

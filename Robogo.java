@@ -20,12 +20,12 @@ public class Robogo extends Jarmu implements KisGepjarmu{
     */
     
     public boolean gyorshajtottE(int sebesseg) {
-        return this.sebesseg > sebesseg ? true : false; 
+        return (this.sebesseg > sebesseg) ? true : false; 
     }
 
     
     public boolean haladhatItt(int sebesseg) {
-        return this.maxSebesseg > sebesseg ? false : true;
+        return (this.maxSebesseg > sebesseg) ? false : true;
     }
 
     public int getMaxSebesseg() {
@@ -39,12 +39,6 @@ public class Robogo extends Jarmu implements KisGepjarmu{
     @Override
     public String toString() {
         return "Robogo: " + super.toString();
-}
-/*
-    @Override
-    public String toString() {
-        return "Robogo: " + super.toString() + " - " + this.getAktualisSebesseg() + " km/h";
-}
-    */
-    
+    }
+
 }

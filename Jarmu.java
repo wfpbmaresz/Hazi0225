@@ -9,7 +9,7 @@ public abstract class Jarmu {
         this.rendszam=rendszam;
     }
     //
-    public abstract boolean gyorshajtottE (int sebesseg);
+    public abstract boolean gyorshajtottE (int sebessegKorlat);
 //
     public int getSebesseg(){
         return sebesseg;
@@ -29,7 +29,7 @@ public abstract class Jarmu {
     
     @Override
     public String toString() {
-        return rendszam + " - " + sebesseg + " km/h";
+        return this.rendszam + " - " + this.sebesseg + " km/h";
     }
     
     
